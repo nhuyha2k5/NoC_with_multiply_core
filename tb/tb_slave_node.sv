@@ -1,0 +1,120 @@
+`timescale 1ns/1ps
+
+module tb_slave_node;
+
+    // 1. Khai báo tín hiệu
+    logic clk;
+    logic rst_n;
+
+    parameter DATA_WIDTH = 34;
+    
+    // Tín hiệu bơm vào cổng West của Slave
+    logic [DATA_WIDTH-1:0] w_flit_in;
+    logic                  w_valid_in;
+    logic                  w_credit_out; // Do Slave xuất ra
+    
+    // Tín hiệu đọc từ cổng West của Slave
+    logic [DATA_WIDTH-1:0] w_flit_out;
+    logic                  w_valid_out;
+    logic                  w_credit_in;  // Bơm tín hiệu rảnh rỗi vào Slave
+
+    // 2. Khởi tạo xung nhịp (100MHz)
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;
+    end
+
+    // 3. Khởi tạo module Slave Node
+    slave_node #(
+        .DATA_WIDTH(DATA_WIDTH),
+        .CURRENT_X(2'd2), .CURRENT_Y(2'd2), // Tọa độ của Slave
+        .MEM_DEPTH(1024)
+    ) uut (
+        .clk(clk), .rst_n(rst_n),
+        
+        // Nối cổng West để giao tiếp với Testbench
+        .w_flit_in(w_flit_in),   .w_valid_in(w_valid_in),   .w_credit_out(w_credit_out),
+        .w_flit_out(w_flit_out), .w_valid_out(w_valid_out), .w_credit_in(w_credit_in),
+        
+        // Các cổng khác nối đất
+        .n_flit_in('0), .n_valid_in(1'b0), .n_credit_in(),
+        .s_flit_in('0), .s_valid_in(1'b0), .s_credit_in(),
+        .e_flit_in('0), .e_valid_in(1'b0), .e_credit_in()
+    );
+
+    // 4. Kịch bản test (Test Scenario)
+    initial begin
+        // Trạng thái ban đầu
+        rst_n = 0;
+        w_flit_in = '0;
+        w_valid_in = 0;
+        w_credit_in = 1; // Testbench luôn rảnh để nhận phản hồi
+
+        // Reset hệ thống
+        #20 rst_n = 1;
+        #20;
+
+        $display("=== STARTING WRITE TEST ===");
+        // BƯỚC 1: GỬI LỆNH GHI (WRITE) VÀO RAM SLAVE
+        // Giao thức giả định: Type(33:32), DestX(31:30), DestY(29:28), SrcX(27:26), SrcY(25:24), WE(23), BE(22:19)
+        
+        // Gửi Head Flit (Write)
+        w_flit_in = {2'b01, 2'd2, 2'd2, 2'd0, 2'd0, 1'b1, 4'b1111, 19'd0}; 
+        w_valid_in = 1;
+        #10;
+        
+        // Gửi Body Flit (Địa chỉ = 0x0000_0010)
+        w_flit_in = {2'b00, 32'h0000_0010};
+        w_valid_in = 1;
+        #10;
+        
+        // Gửi Tail Flit (Dữ liệu = 0xDEAD_BEEF)
+        w_flit_in = {2'b10, 32'hDEAD_BEEF};
+        w_valid_in = 1;
+        #10;
+        
+        w_valid_in = 0; // Ngừng gửi
+        $display("-> Sent Write: Addr 0x10, Data 0xDEAD_BEEF");
+        #50; // Chờ Slave xử lý ghi vào RAM
+
+        $display("=== STARTING READ TEST ===");
+        // BƯỚC 2: GỬI LỆNH ĐỌC (READ) TỪ ĐỊA CHỈ VỪA GHI
+        
+        // Gửi Head Flit (Read - WE=0)
+        w_flit_in = {2'b01, 2'd2, 2'd2, 2'd0, 2'd0, 1'b0, 4'b1111, 19'd0}; 
+        w_valid_in = 1;
+        #10;
+        
+        // Gửi Tail Flit (Địa chỉ = 0x0000_0010) - Đọc không có Body Flit theo thiết kế của bạn
+        w_flit_in = {2'b10, 32'h0000_0010};
+        w_valid_in = 1;
+        #10;
+        
+        w_valid_in = 0; // Ngừng gửi
+        $display("-> Sent Read Request for Addr 0x10");
+
+        // VÒNG LẶP CHỜ THÔNG MINH BẮT FLIT PHẢN HỒI
+        while (1) begin
+            @(posedge clk);
+            if (w_valid_out) begin
+                if (w_flit_out[33:32] == 2'b01) begin
+                    $display("<- Received Head Flit from Slave: %h", w_flit_out);
+                end
+                else if (w_flit_out[33:32] == 2'b10) begin
+                    $display("<- Received Tail Flit (Data) from Slave: %h", w_flit_out[31:0]);
+                    
+                    if (w_flit_out[31:0] == 32'hDEAD_BEE1)
+                        $display(">>> TEST PASSED! Slave returned correct data. <<<");
+                    else
+                        $display(">>> TEST FAILED! Expected DEADBEEF, got %h. <<<", w_flit_out[31:0]);
+                    
+                    break; // Bắt được Tail Flit rồi thì thoát vòng lặp
+                end
+            end
+        end
+
+        #50;
+        $stop; // Dừng mô phỏng
+    end
+
+endmodule

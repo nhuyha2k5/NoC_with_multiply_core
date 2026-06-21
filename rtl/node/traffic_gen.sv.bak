@@ -1,0 +1,84 @@
+`timescale 1ns/1ps
+module traffic_gen #(
+    parameter DEST_X     = 2'd2,
+    parameter DEST_Y     = 2'd2,
+    parameter LOAD_FACTOR = 10,   // số chu kỳ giữa các request
+    parameter WRITE_PROB = 50     // % xác suất ghi
+)(
+    input  logic clk,
+    input  logic rst_n,
+    // OBI interface
+    output logic        obi_req,
+    input  logic        obi_gnt,
+    output logic        obi_we,
+    output logic [3:0]  obi_be,
+    output logic [31:0] obi_addr,
+    output logic [31:0] obi_wdata,
+    input  logic        obi_rvalid,
+    input  logic [31:0] obi_rdata
+);
+
+    typedef enum logic [1:0] {IDLE, SEND, WAIT_GRANT, WAIT_RVALID} state_t;
+    state_t state, next_state;
+
+    logic [31:0] counter, seed, addr_counter;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            state <= IDLE;
+            counter <= 0;
+            seed <= 32'h12345678;
+            addr_counter <= 0;
+        end else begin
+            state <= next_state;
+            counter <= counter + 1;
+            seed <= {seed[30:0], seed[31] ^ seed[21] ^ seed[1] ^ seed[0]}; // LFSR ngẫu nhiên
+        end
+    end
+
+    logic request_trigger;
+    assign request_trigger = (counter % LOAD_FACTOR == 0);
+
+    logic [31:0] rand_addr;
+    assign rand_addr = 32'h8000_0000 | (DEST_X << 26) | (DEST_Y << 24) | (addr_counter << 2);
+
+    logic rand_we;
+    assign rand_we = (seed % 100 < WRITE_PROB);
+
+    always_ff @(posedge clk) begin
+        if (state == IDLE && request_trigger) begin
+            addr_counter <= addr_counter + 1;
+        end
+    end
+
+    always_comb begin
+        next_state = state;
+        obi_req = 1'b0;
+        obi_we = 1'b0;
+        obi_be = 4'b1111;
+        obi_addr = 32'd0;
+        obi_wdata = 32'd0;
+
+        case (state)
+            IDLE: begin
+                if (request_trigger) begin
+                    obi_req = 1'b1;
+                    obi_we = rand_we;
+                    obi_addr = rand_addr;
+                    obi_wdata = seed;
+                    next_state = WAIT_GRANT;
+                end
+            end
+            WAIT_GRANT: begin
+                obi_req = 1'b1;
+                obi_we = rand_we;
+                obi_addr = rand_addr;
+                obi_wdata = seed;
+                if (obi_gnt) next_state = WAIT_RVALID;
+            end
+            WAIT_RVALID: begin
+                if (obi_rvalid) next_state = IDLE;
+            end
+        endcase
+    end
+endmodule

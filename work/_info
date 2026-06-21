@@ -1,0 +1,924 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\project_verilog\noc_riscV
+vALU
+Z1 IP?Q35IJI6zIakKc0N^^YA3
+Z2 VKi;R3l^dmfY^b>90EIh[G3
+Z3 dD:\project_verilog\noc_riscV
+Z4 w1777371062
+Z5 8rtl/riscV/ALU.v
+Z6 Frtl/riscV/ALU.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1782056212.863000
+Z9 !s107 rtl/riscV/Top_Single_Cycle.v|rtl/riscV/Top_module_riscV_noc.v|rtl/riscV/Top_module_pipeline_RISC_V_32I.v|rtl/riscV/Register_File.v|rtl/riscV/Program_Counter.v|rtl/riscV/PHT.v|rtl/riscV/MEM_WB.v|rtl/riscV/instruction_memory.v|rtl/riscV/imm_extend.v|rtl/riscV/IF_ID.v|rtl/riscV/ID_EX.v|rtl/riscV/Hazard_Unit.v|rtl/riscV/Forwarding_Unit.v|rtl/riscV/EX_MEM.v|rtl/riscV/data_memory.v|rtl/riscV/cpu_obi_bridge.v|rtl/riscV/control_unit.v|rtl/riscV/BTB.v|rtl/riscV/Branch_Prediction_Unit.v|rtl/riscV/ALU.v|
+Z10 !s90 rtl/riscV/ALU.v|rtl/riscV/Branch_Prediction_Unit.v|rtl/riscV/BTB.v|rtl/riscV/control_unit.v|rtl/riscV/cpu_obi_bridge.v|rtl/riscV/data_memory.v|rtl/riscV/EX_MEM.v|rtl/riscV/Forwarding_Unit.v|rtl/riscV/Hazard_Unit.v|rtl/riscV/ID_EX.v|rtl/riscV/IF_ID.v|rtl/riscV/imm_extend.v|rtl/riscV/instruction_memory.v|rtl/riscV/MEM_WB.v|rtl/riscV/PHT.v|rtl/riscV/Program_Counter.v|rtl/riscV/Register_File.v|rtl/riscV/Top_module_pipeline_RISC_V_32I.v|rtl/riscV/Top_module_riscV_noc.v|rtl/riscV/Top_Single_Cycle.v|
+o-O0
+Z11 n@a@l@u
+Z12 !s100 2PBKlmKXF4882?]lb8]T21
+!i10b 1
+!s85 0
+!s101 -O0
+varbiter
+Z13 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z14 IB5?_D^XFC<F>beCYzi7?;3
+Z15 VJd3YRNfFKdLolIE0FHW`83
+S1
+R3
+Z16 w1782049837
+Z17 8rtl/router/arbiter.sv
+Z18 Frtl/router/arbiter.sv
+L0 2
+R7
+r1
+31
+Z19 !s108 1782056128.542000
+Z20 !s107 rtl/router/xy_routing.sv|rtl/router/router_top.sv|rtl/router/output_port.sv|rtl/router/input_port.sv|rtl/router/fifo_buffer.sv|rtl/router/crossbar_switch.sv|rtl/router/arbiter.sv|
+Z21 !s90 rtl/router/arbiter.sv|rtl/router/crossbar_switch.sv|rtl/router/fifo_buffer.sv|rtl/router/input_port.sv|rtl/router/output_port.sv|rtl/router/router_top.sv|rtl/router/xy_routing.sv|
+o-O0
+Z22 !s100 S;WV6;Vb]kR`0^_0[:Je?2
+Z23 !s105 arbiter_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vBranch_Prediction_Unit
+Z24 ImYzbNEHj6aInWzGDJ52Fb1
+Z25 V5`ZHB3f?bYOA=GQDXcDX90
+R3
+Z26 w1778172244
+Z27 8rtl/riscV/Branch_Prediction_Unit.v
+Z28 Frtl/riscV/Branch_Prediction_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z29 n@branch_@prediction_@unit
+Z30 !s100 G0n>SMe`9]`165_LMdNki3
+!i10b 1
+!s85 0
+!s101 -O0
+vBTB
+Z31 Im2jzh:S9Ki^8J^mC?aZ4k3
+Z32 VJc0;D8AQ[NM[VIX^Wj_mI0
+R3
+Z33 w1778403987
+Z34 8rtl/riscV/BTB.v
+Z35 Frtl/riscV/BTB.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z36 n@b@t@b
+Z37 !s100 3bUGoY`06ReXgXBK9<7[70
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrol_unit
+Z38 IKR8kbi<1W6SI?UzJZ?JI50
+Z39 V^65aGCI]1@c2ZmbCA668:3
+R3
+Z40 w1782052666
+Z41 8rtl/riscV/control_unit.v
+Z42 Frtl/riscV/control_unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z43 !s100 ?_LL^bF1^>SR795IOaZC81
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_obi_bridge
+Z44 Ih5S1EK4X`dT@9TThRaAMQ0
+Z45 VJ^hGR?]`65TUSFZClafzY3
+R3
+Z46 w1782016763
+Z47 8rtl/riscV/cpu_obi_bridge.v
+Z48 Frtl/riscV/cpu_obi_bridge.v
+L0 3
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z49 !s100 0Tc>5><L_Ooe1@f]8`SSO3
+!i10b 1
+!s85 0
+!s101 -O0
+vcrossbar_switch
+R13
+Z50 IP65mbg0IhYARER`DHXHkE2
+Z51 VISPkXF7N;Ng<BlHo`PZA90
+S1
+R3
+Z52 w1777716747
+Z53 8rtl/router/crossbar_switch.sv
+Z54 Frtl/router/crossbar_switch.sv
+L0 2
+R7
+r1
+31
+R19
+R20
+R21
+o-O0
+Z55 !s100 3`6loKPMh_IbTj2G5FEET0
+Z56 !s105 crossbar_switch_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vdata_memory
+Z57 I7M[Qn:m:d4Ym>WkoW<d8i2
+Z58 V^HH3B4noCoK4H1doD;zVM2
+R3
+Z59 w1779293086
+Z60 8rtl/riscV/data_memory.v
+Z61 Frtl/riscV/data_memory.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z62 !s100 Tij5HoCKNZzUcZBoN8lLk2
+!i10b 1
+!s85 0
+!s101 -O0
+vEX_MEM
+Z63 I5EM?o7`3V7M@fEn^?aI<X0
+Z64 Vf150Y5`R4QCHCY=W;1[AE2
+R3
+Z65 w1778206590
+Z66 8rtl/riscV/EX_MEM.v
+Z67 Frtl/riscV/EX_MEM.v
+L0 2
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z68 n@e@x_@m@e@m
+Z69 !s100 4o@X;WOUYX5V9iM6EAJ`91
+!i10b 1
+!s85 0
+!s101 -O0
+vfifo_buffer
+R13
+Z70 IM>nkA;j?oOZ2jj9G_]=^U1
+Z71 VDCfW07N8<_[=AOhGMS2A12
+S1
+R3
+Z72 w1777716774
+Z73 8rtl/router/fifo_buffer.sv
+Z74 Frtl/router/fifo_buffer.sv
+L0 2
+R7
+r1
+31
+R19
+R20
+R21
+o-O0
+Z75 !s100 R7hnQVT];VAzkZ?@f;K170
+Z76 !s105 fifo_buffer_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vForwarding_Unit
+Z77 IeF:@U<bf5]b5TZh2IZX8]0
+Z78 V7D7i_SEkbL]2Kg8dUlf;61
+R3
+Z79 w1776935058
+Z80 8rtl/riscV/Forwarding_Unit.v
+Z81 Frtl/riscV/Forwarding_Unit.v
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z82 n@forwarding_@unit
+Z83 !s100 f9aR:[VPQo^ozaEC=M<=O2
+!i10b 1
+!s85 0
+!s101 -O0
+vHazard_Unit
+Z84 If1P1P:S8PI5Tc82B>XGAb3
+Z85 VM8g2LfFTlD@fL^IEA=2fl3
+R3
+Z86 w1778162374
+Z87 8rtl/riscV/Hazard_Unit.v
+Z88 Frtl/riscV/Hazard_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z89 n@hazard_@unit
+Z90 !s100 =>6dn>fUWJh`SBc>0chTB3
+!i10b 1
+!s85 0
+!s101 -O0
+vID_EX
+Z91 IRmleHQ]=2Fbk6mK6ZKmHT0
+Z92 VMIN_aT?cUQ^dGAV<eK;<:1
+R3
+Z93 w1778162356
+Z94 8rtl/riscV/ID_EX.v
+Z95 Frtl/riscV/ID_EX.v
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z96 n@i@d_@e@x
+Z97 !s100 R`kDYKIOIa?8Uff_f>OO_3
+!i10b 1
+!s85 0
+!s101 -O0
+vIF_ID
+Z98 Im2Ebaka;^>Z[o7d4_dcS41
+Z99 VnDIPEKTS6U^b5lAI4n_0<3
+R3
+Z100 w1776932636
+Z101 8rtl/riscV/IF_ID.v
+Z102 Frtl/riscV/IF_ID.v
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z103 n@i@f_@i@d
+Z104 !s100 U[G]WW8iNX<Fc6Lzazl0^2
+!i10b 1
+!s85 0
+!s101 -O0
+vimm_extend
+Z105 IH?YO8KTUOFj4df;kj8b?Z3
+Z106 VHdE`;Fb6EDPYYD7?^JBVh2
+R3
+Z107 w1776018138
+Z108 8rtl/riscV/imm_extend.v
+Z109 Frtl/riscV/imm_extend.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z110 !s100 m3f:hn;PnK`4_20Nm08@:2
+!i10b 1
+!s85 0
+!s101 -O0
+vinput_port
+R13
+Z111 Id[<=HORKReFKD5QLhP7Ol3
+Z112 VKm[eE?l<FGk^d70c=[E:K2
+S1
+R3
+Z113 w1781971006
+Z114 8rtl/router/input_port.sv
+Z115 Frtl/router/input_port.sv
+L0 2
+R7
+r1
+31
+R19
+R20
+R21
+o-O0
+Z116 !s100 =8=IkfP]::6XB9T[:k9fY2
+Z117 !s105 input_port_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vinstruction_memory
+Z118 I9;fX=gegbH>OIiAN`E>Ko3
+Z119 VXUc7P4_aOjMb2zl7KcE;23
+R3
+Z120 w1778404327
+Z121 8rtl/riscV/instruction_memory.v
+Z122 Frtl/riscV/instruction_memory.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z123 !s100 B@0L2i6d=><FhDICS]E1o0
+!i10b 1
+!s85 0
+!s101 -O0
+vmaster_ni
+R13
+Z124 I_0CGXF3=TJdfYgkOkZfKm1
+Z125 V`=iW5g@D;gSKamoD21PYa1
+S1
+R3
+Z126 w1781971277
+Z127 8rtl/network_interface/master_ni.sv
+Z128 Frtl/network_interface/master_ni.sv
+L0 2
+R7
+r1
+31
+Z129 !s108 1782056265.386000
+Z130 !s107 rtl/network_interface/slave_ni.sv|rtl/network_interface/ram_obi.sv|rtl/network_interface/master_ni.sv|
+Z131 !s90 rtl/network_interface/master_ni.sv|rtl/network_interface/ram_obi.sv|rtl/network_interface/slave_ni.sv|
+o-O0
+Z132 !s100 _Zz=B`XC]K6eT;2_<<IZV2
+Z133 !s105 master_ni_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vmaster_node
+R13
+Z134 I3O5<[WL_O2a[84blJj^U:2
+Z135 VLhS`cXSjD=b9J3E;8nEdX2
+S1
+R3
+Z136 w1782026904
+Z137 8rtl/node/master_node.sv
+Z138 Frtl/node/master_node.sv
+L0 3
+R7
+r1
+31
+Z139 !s108 1782056327.763000
+Z140 !s107 rtl/node/traffic_gen.sv|rtl/node/tg_node.sv|rtl/node/slave_node.sv|rtl/node/master_node.sv|
+Z141 !s90 rtl/node/master_node.sv|rtl/node/slave_node.sv|rtl/node/tg_node.sv|rtl/node/traffic_gen.sv|
+o-O0
+Z142 !s100 Y;_V`UkafkfBfFWfZeMgB0
+Z143 !s105 master_node_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vMEM_WB
+Z144 Iaf6<?N:AjSN0H_OdU[@=b2
+Z145 V=oL7G<>OAA[dMF^nHziPj2
+R3
+Z146 w1776934902
+Z147 8rtl/riscV/MEM_WB.v
+Z148 Frtl/riscV/MEM_WB.v
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z149 n@m@e@m_@w@b
+Z150 !s100 4CfZnNF678b_K_];l0oNz3
+!i10b 1
+!s85 0
+!s101 -O0
+vmesh_3x3
+R13
+Z151 !s100 6WD?;SBo7[S5<Fcg8L3m:0
+Z152 I@PZbKHEz22?ZW5T@d^LhG0
+Z153 VMl@?l0=@;hADYkW0K86eV2
+Z154 !s105 mesh_3x3_sv_unit
+S1
+R3
+Z155 w1782058857
+Z156 8rtl/mesh_3x3/mesh_3x3.sv
+Z157 Frtl/mesh_3x3/mesh_3x3.sv
+L0 3
+R7
+r1
+31
+Z158 !s90 rtl/mesh_3x3/mesh_3x3.sv|
+o-O0
+Z159 !s108 1782059207.953000
+Z160 !s107 rtl/mesh_3x3/mesh_3x3.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+voutput_port
+R13
+Z161 IVSTlmhZM73:hBI;NYo9R=2
+Z162 Vf5a@o<[Z`W56J4RC@2NLz3
+S1
+R3
+Z163 w1777716811
+Z164 8rtl/router/output_port.sv
+Z165 Frtl/router/output_port.sv
+L0 2
+R7
+r1
+31
+R19
+R20
+R21
+o-O0
+Z166 !s100 AAn:J5>H`J<:=XgbTJY8P1
+Z167 !s105 output_port_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vPHT
+Z168 IZeML=V71279H=f]9OB0aT1
+Z169 VZ1CXAhPW`HCmdNS[Cl=`f0
+R3
+Z170 w1778403988
+Z171 8rtl/riscV/PHT.v
+Z172 Frtl/riscV/PHT.v
+L0 2
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z173 n@p@h@t
+Z174 !s100 ol@TBR`_aP?Gn1=]<:7VF3
+!i10b 1
+!s85 0
+!s101 -O0
+vProgram_Counter
+Z175 IgAa;QVKNcW;iPT0]oI9ho0
+Z176 V6^M4@7lAWz?9BTDGiDZj[0
+R3
+Z177 w1776017368
+Z178 8rtl/riscV/Program_Counter.v
+Z179 Frtl/riscV/Program_Counter.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z180 n@program_@counter
+Z181 !s100 ZnII?5:b3BK9L]Vo[jY`:1
+!i10b 1
+!s85 0
+!s101 -O0
+vram_obi
+Z182 I4`Z12z0IO=zSHNXA?Flb:1
+Z183 VWW0WkGdkQAibk8ihj1R0i1
+R3
+Z184 w1782013892
+Z185 8rtl/node/ram_obi.v
+Z186 Frtl/node/ram_obi.v
+L0 3
+R7
+r1
+31
+o-O0
+Z187 !s100 h91[J=2K3ZInP5K7@@2VC1
+Z188 !s108 1782056341.054000
+Z189 !s107 rtl/node/ram_obi.v|
+Z190 !s90 rtl/node/ram_obi.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vRegister_File
+Z191 IW_5fW^=>WW>CzP>>MAaXc2
+Z192 V=2]WzV>KRWiR6RX0YSBf41
+R3
+Z193 w1778859108
+Z194 8rtl/riscV/Register_File.v
+Z195 Frtl/riscV/Register_File.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z196 n@register_@file
+Z197 !s100 G3=F18i8T4:@G7zg[8cVY0
+!i10b 1
+!s85 0
+!s101 -O0
+vrouter_top
+R13
+Z198 IB2nf;Xh0GKB;eBkfgiOR?2
+Z199 VDJbVflQ:Cz6E[6FEkJj9P2
+S1
+R3
+Z200 w1781264001
+Z201 8rtl/router/router_top.sv
+Z202 Frtl/router/router_top.sv
+L0 2
+R7
+r1
+31
+R19
+R20
+R21
+o-O0
+Z203 !s100 hIkG7J1CeV4zYbf9MYYS_0
+Z204 !s105 router_top_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vslave_ni
+R13
+Z205 IQ1CeKe6P6J:0G?nBPQXbV2
+Z206 VJQ<B0NHVe8BH;X6`cP1Pi2
+S1
+R3
+Z207 w1782020668
+Z208 8rtl/network_interface/slave_ni.sv
+Z209 Frtl/network_interface/slave_ni.sv
+L0 3
+R7
+r1
+31
+R129
+R130
+R131
+o-O0
+Z210 !s100 [gQeh8_=IY>1^LNVbDl2d2
+Z211 !s105 slave_ni_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vslave_node
+R13
+Z212 IaFYbXlLN@Mh?]Z5:1_2CP1
+Z213 Vii1EhR0[e[YJE3OP:l@^U3
+S1
+R3
+Z214 w1782019273
+Z215 8rtl/node/slave_node.sv
+Z216 Frtl/node/slave_node.sv
+L0 3
+R7
+r1
+31
+R139
+R140
+R141
+o-O0
+Z217 !s100 KG^:zeSY>MzhF]MD:57YP0
+Z218 !s105 slave_node_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_master_node
+R13
+Z219 !s100 zQ?4BgU6GVUz94hV9:Na=3
+Z220 IJ9;4VO[8?CzhKSjHXGMX>3
+Z221 V>g7^YZhOg5_cSm?Rn`i_Y3
+Z222 !s105 tb_master_node_sv_unit
+S1
+R3
+Z223 w1782027872
+Z224 8tb/tb_master_node.sv
+Z225 Ftb/tb_master_node.sv
+L0 3
+R7
+r1
+31
+Z226 !s108 1782058885.484000
+Z227 !s107 tb/tb_tg_slave.sv|tb/tb_slave_node.sv|tb/tb_priority.sv|tb/tb_performance_mesh.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_master_node.sv|
+Z228 !s90 tb/tb_master_node.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_performance_mesh.sv|tb/tb_priority.sv|tb/tb_slave_node.sv|tb/tb_tg_slave.sv|
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_mesh_3x3_congestion
+R13
+Z229 ISFzfcjg9J@gahoGF6iS<W1
+Z230 VLE:?;3G8<4QJb`kDZ1VLL2
+Z231 !s105 tb_mesh_3x3_congestion_sv_unit
+S1
+R3
+Z232 w1782058302
+Z233 8tb/tb_mesh_3x3_congestion.sv
+Z234 Ftb/tb_mesh_3x3_congestion.sv
+L0 3
+R7
+r1
+31
+Z235 !s108 1782058311.592000
+Z236 !s107 tb/tb_tg_slave.sv|tb/tb_slave_node.sv|tb/tb_performance_mesh.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_master_node.sv|
+Z237 !s90 tb/tb_master_node.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_performance_mesh.sv|tb/tb_slave_node.sv|tb/tb_tg_slave.sv|
+o-O0
+Z238 !s100 PiSC;SO_9C6jdkkSSSg9[2
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_mesh_3x3_latency
+R13
+Z239 !s100 R=WM;=2QdCFDkn2F^JJfU0
+Z240 I6ZhV9b@L5a<k`[d@ILiK?3
+Z241 VdMCB`dkY>>8A;<lgk8_??2
+Z242 !s105 tb_mesh_3x3_latency_sv_unit
+S1
+R3
+Z243 w1782056964
+Z244 8tb/tb_mesh_3x3_latency.sv
+Z245 Ftb/tb_mesh_3x3_latency.sv
+L0 3
+R7
+r1
+31
+R235
+R236
+R237
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_performance_mesh
+R13
+Z246 DXx4 work 27 tb_performance_mesh_sv_unit 0 22 _PbPZ9TLV35ZbdHVHUS833
+Z247 VVePg3]CLO2zMC?bFhNBNb2
+r1
+31
+Z248 !s100 9=_LEUhI[W<I0<Y1?1m>S3
+Z249 Ik3cQXP1aaaA9CKoNh=bVd0
+Z250 !s105 tb_performance_mesh_sv_unit
+S1
+R3
+Z251 w1782053523
+Z252 8tb/tb_performance_mesh.sv
+Z253 Ftb/tb_performance_mesh.sv
+L0 22
+R7
+R235
+R236
+R237
+o-O0
+!s85 0
+!i10b 1
+!s101 -O0
+Xtb_performance_mesh_sv_unit
+R13
+Z254 V_PbPZ9TLV35ZbdHVHUS833
+r1
+31
+Z255 !s100 MOFC3M^Z:1F4AjD^=A0IZ1
+Z256 I_PbPZ9TLV35ZbdHVHUS833
+S1
+R3
+R251
+R252
+R253
+L0 4
+R7
+R235
+R236
+R237
+o-O0
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vtb_priority
+R13
+Z257 !s100 IJ]mbd>mjBZDJ2^e?b@:c0
+Z258 IdKjKbfEHDEY8olNCHVB:G0
+Z259 VWbzU]<o3E2XHm9aZQO`di2
+Z260 !s105 tb_priority_sv_unit
+S1
+R3
+Z261 w1782059634
+Z262 8tb/tb_priority.sv
+Z263 Ftb/tb_priority.sv
+L0 3
+R7
+r1
+31
+Z264 !s90 tb/tb_priority.sv|
+o-O0
+Z265 !s108 1782059671.297000
+Z266 !s107 tb/tb_priority.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_priority_cpu
+R13
+Z267 I^`Z<JG6Pk9CNTIcTbk]UA1
+Z268 Ve;Q=Ck75^VUilJb3WVUX`1
+S1
+R3
+Z269 w1782059836
+Z270 8tb/tb_priority_cpu.sv
+Z271 Ftb/tb_priority_cpu.sv
+L0 3
+R7
+r1
+31
+o-O0
+!i10b 1
+Z272 !s100 7L::^nDI1QzIENFZPhDn<0
+Z273 !s105 tb_priority_cpu_sv_unit
+!s85 0
+Z274 !s108 1782059867.663000
+Z275 !s107 tb/tb_priority_cpu.sv|
+Z276 !s90 tb/tb_priority_cpu.sv|
+!s101 -O0
+vtb_slave_node
+Z277 I3m5=BZ]h0ozMYQKE7a]HW3
+Z278 V`JN@9S9cnhjKRR_L]QIcM3
+R231
+S1
+R3
+Z279 w1782019407
+Z280 8tb/tb_slave_node.sv
+Z281 Ftb/tb_slave_node.sv
+L0 3
+R7
+r1
+31
+R226
+R227
+R228
+o-O0
+Z282 !s100 TXl9BVdS[QJ6:0nz]_RV_3
+!i10b 1
+!s85 0
+!s101 -O0
+vtb_tg_slave
+Z283 !s100 a>>WLPed>eD2I7:7dnG570
+Z284 IAbE1E=m?DR[?YRlmk6<JT0
+R278
+R231
+S1
+R3
+Z285 w1782020780
+Z286 8tb/tb_tg_slave.sv
+Z287 Ftb/tb_tg_slave.sv
+L0 3
+R7
+r1
+31
+R226
+R227
+R228
+o-O0
+!i10b 1
+!s85 0
+!s101 -O0
+vtg_node
+R13
+Z288 IJNL7dHe@^RAlMM7kUnO8<2
+Z289 VA?Nfl?8?CfObGN`OZ09b43
+S1
+R3
+Z290 w1782019752
+Z291 8rtl/node/tg_node.sv
+Z292 Frtl/node/tg_node.sv
+L0 2
+R7
+r1
+31
+R139
+R140
+R141
+o-O0
+Z293 !s100 IHB7FN?gT1N=YG:gm`cPo1
+Z294 !s105 tg_node_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vTop_module_pipeline_RISC_V_32I
+Z295 IAXWVYQZP[?g2mbPF_m1hm3
+Z296 VngNS3oS7kIJ476>5AgFNM2
+R3
+Z297 w1778409455
+Z298 8rtl/riscV/Top_module_pipeline_RISC_V_32I.v
+Z299 Frtl/riscV/Top_module_pipeline_RISC_V_32I.v
+L0 1
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z300 n@top_module_pipeline_@r@i@s@c_@v_32@i
+Z301 !s100 @RHUG?@MCHz]ihT`nbDIC0
+!i10b 1
+!s85 0
+!s101 -O0
+vTop_module_riscV_noc
+Z302 IWUK>l=QO0FUodl1VN^FNM0
+Z303 V>ShYD4Vk5gkVG2@Y6o68`0
+R3
+Z304 w1782051410
+Z305 8rtl/riscV/Top_module_riscV_noc.v
+Z306 Frtl/riscV/Top_module_riscV_noc.v
+L0 3
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z307 n@top_module_risc@v_noc
+Z308 !s100 eK09IT^NWT_O[ARdo96X;0
+!i10b 1
+!s85 0
+!s101 -O0
+vTop_Single_Cycle
+Z309 IQVbgO?9E<gjBJJdmQ[^]61
+Z310 VFbl<Mgh>361g@PBV_TH?21
+R3
+Z311 w1778172324
+Z312 8rtl/riscV/Top_Single_Cycle.v
+Z313 Frtl/riscV/Top_Single_Cycle.v
+L0 4
+R7
+r1
+31
+R8
+R9
+R10
+o-O0
+Z314 n@top_@single_@cycle
+Z315 !s100 34dfdSeO_e]JEz;fT70JA3
+!i10b 1
+!s85 0
+!s101 -O0
+vtraffic_gen
+R13
+Z316 ImXE@b;U9AEgb`in@Pa0EP2
+Z317 V6f6U_C@9L2z5:oGiU1E@Q0
+S1
+R3
+Z318 w1782034665
+Z319 8rtl/node/traffic_gen.sv
+Z320 Frtl/node/traffic_gen.sv
+L0 3
+R7
+r1
+31
+R139
+R140
+R141
+o-O0
+Z321 !s100 CUd?U1?ZVkN0hk8Oke9T63
+Z322 !s105 traffic_gen_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0
+vxy_routing
+R13
+Z323 I9Hj2`>F^WB;J:CYLlBTMB3
+Z324 VhT[6oHcZP[VG5O>iKd`662
+S1
+R3
+Z325 w1777716939
+Z326 8rtl/router/xy_routing.sv
+Z327 Frtl/router/xy_routing.sv
+L0 2
+R7
+r1
+31
+R19
+R20
+R21
+o-O0
+Z328 !s100 A:b@E4:C6_AWFSKFnNK>K3
+Z329 !s105 xy_routing_sv_unit
+!i10b 1
+!s85 0
+!s101 -O0

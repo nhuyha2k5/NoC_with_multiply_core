@@ -1,0 +1,17 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/node {D:/project_verilog/noc_riscV/rtl/node/slave_node.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/network_interface {D:/project_verilog/noc_riscV/rtl/network_interface/slave_ni.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/router_top.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/output_port.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/input_port.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/fifo_buffer.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/crossbar_switch.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/arbiter.sv}
+

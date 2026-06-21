@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun 21 22:40:34 2026
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : riscV_noc
+Top-level Entity Name : mesh_3x3
+Family : Cyclone II
+Device : EP2C50F672C6
+Timing Models : Final
+Total logic elements : 30,320 / 50,528 ( 60 % )
+    Total combinational functions : 21,307 / 50,528 ( 42 % )
+    Dedicated logic registers : 14,028 / 50,528 ( 28 % )
+Total registers : 14028
+Total pins : 162 / 450 ( 36 % )
+Total virtual pins : 0
+Total memory bits : 32,768 / 594,432 ( 6 % )
+Embedded Multiplier 9-bit elements : 0 / 172 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

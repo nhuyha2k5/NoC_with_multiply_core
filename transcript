@@ -1,0 +1,224 @@
+# vsim tb_priority_cpu 
+# Loading sv_std.std
+# Loading work.tb_priority_cpu
+# Loading work.mesh_3x3
+# Loading work.master_node
+# Loading work.Top_module_riscV_noc
+# Loading work.Program_Counter
+# Loading work.IF_ID
+# Loading work.control_unit
+# Loading work.imm_extend
+# Loading work.Register_File
+# Loading work.ID_EX
+# Loading work.Forwarding_Unit
+# Loading work.ALU
+# Loading work.Hazard_Unit
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+# Loading work.cpu_obi_bridge
+# Loading work.ram_obi
+# Loading work.master_ni
+# Loading work.router_top
+# Loading work.input_port
+# Loading work.fifo_buffer
+# Loading work.xy_routing
+# Loading work.arbiter
+# Loading work.crossbar_switch
+# Loading work.output_port
+# Loading work.tg_node
+# Loading work.traffic_gen
+# Loading work.slave_node
+# Loading work.slave_ni
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+add wave * -f
+# Missing signal name or pattern.
+run -all
+# ** Warning: (vsim-PLI-3410) Illegal character ':' in data on line 6 of file "D:/project_verilog/noc_riscV/rtl/mesh_3x3/hex/code_master0.hex".    : rtl/node/ram_obi.v(42)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_priority_cpu/dut/MESH_X[0]/MESH_Y[0]/NODE_CPU_00/u_master0/u_local_data_ram
+# ** Warning: (vsim-PLI-3410) Illegal character ':' in data on line 6 of file "D:/project_verilog/noc_riscV/rtl/mesh_3x3/hex/code_master1.hex".    : rtl/node/ram_obi.v(42)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_priority_cpu/dut/MESH_X[2]/MESH_Y[2]/NODE_CPU_22/u_master1/u_local_data_ram
+# === TEST PRIORITY (CPU master) ===
+# Node 00: PRIORITY=1, Node 22: PRIORITY=0
+# Ca hai deu gui den Slave (1,1)
+# LOI: Khong nhan duoc goi nao tu CPU!
+# Break key hit 
+# Simulation stop requested.

@@ -1,0 +1,416 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do riscV_noc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/node {D:/project_verilog/noc_riscV/rtl/node/ram_obi.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram_obi
+# 
+# Top level modules:
+# 	ram_obi
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/Top_module_riscV_noc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Top_module_riscV_noc
+# 
+# Top level modules:
+# 	Top_module_riscV_noc
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/Register_File.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Register_File
+# 
+# Top level modules:
+# 	Register_File
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/Program_Counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Program_Counter
+# 
+# Top level modules:
+# 	Program_Counter
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/MEM_WB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/imm_extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module imm_extend
+# 
+# Top level modules:
+# 	imm_extend
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/IF_ID.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/ID_EX.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/Hazard_Unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Hazard_Unit
+# 
+# Top level modules:
+# 	Hazard_Unit
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/Forwarding_Unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Forwarding_Unit
+# 
+# Top level modules:
+# 	Forwarding_Unit
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/EX_MEM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/cpu_obi_bridge.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu_obi_bridge
+# 
+# Top level modules:
+# 	cpu_obi_bridge
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/control_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# vlog -vlog01compat -work work +incdir+D:/project_verilog/noc_riscV/rtl/riscV {D:/project_verilog/noc_riscV/rtl/riscV/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/mesh_3x3 {D:/project_verilog/noc_riscV/rtl/mesh_3x3/mesh_3x3.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mesh_3x3
+# 
+# Top level modules:
+# 	mesh_3x3
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/node {D:/project_verilog/noc_riscV/rtl/node/master_node.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module master_node
+# 
+# Top level modules:
+# 	master_node
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/node {D:/project_verilog/noc_riscV/rtl/node/slave_node.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module slave_node
+# 
+# Top level modules:
+# 	slave_node
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/node {D:/project_verilog/noc_riscV/rtl/node/tg_node.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tg_node
+# 
+# Top level modules:
+# 	tg_node
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/node {D:/project_verilog/noc_riscV/rtl/node/traffic_gen.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module traffic_gen
+# 
+# Top level modules:
+# 	traffic_gen
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/network_interface {D:/project_verilog/noc_riscV/rtl/network_interface/slave_ni.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module slave_ni
+# 
+# Top level modules:
+# 	slave_ni
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/network_interface {D:/project_verilog/noc_riscV/rtl/network_interface/master_ni.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module master_ni
+# 
+# Top level modules:
+# 	master_ni
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module xy_routing
+# 
+# Top level modules:
+# 	xy_routing
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/router_top.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module router_top
+# 
+# Top level modules:
+# 	router_top
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/output_port.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module output_port
+# 
+# Top level modules:
+# 	output_port
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/input_port.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module input_port
+# 
+# Top level modules:
+# 	input_port
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/fifo_buffer.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo_buffer
+# 
+# Top level modules:
+# 	fifo_buffer
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/crossbar_switch.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module crossbar_switch
+# 
+# Top level modules:
+# 	crossbar_switch
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/arbiter.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arbiter
+# 
+# Top level modules:
+# 	arbiter
+# 
+# vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/build/../tb {D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_latency.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_mesh_3x3_latency
+# 
+# Top level modules:
+# 	tb_mesh_3x3_latency
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb_mesh_3x3_latency
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_mesh_3x3_latency 
+# Loading sv_std.std
+# Loading work.tb_mesh_3x3_latency
+# Loading work.mesh_3x3
+# Loading work.master_node
+# Loading work.Top_module_riscV_noc
+# Loading work.Program_Counter
+# Loading work.IF_ID
+# Loading work.control_unit
+# Loading work.imm_extend
+# Loading work.Register_File
+# Loading work.ID_EX
+# Loading work.Forwarding_Unit
+# Loading work.ALU
+# Loading work.Hazard_Unit
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+# Loading work.cpu_obi_bridge
+# Loading work.ram_obi
+# Loading work.master_ni
+# Loading work.router_top
+# Loading work.input_port
+# Loading work.fifo_buffer
+# Loading work.xy_routing
+# Loading work.arbiter
+# Loading work.crossbar_switch
+# Loading work.output_port
+# Loading work.tg_node
+# Loading work.traffic_gen
+# Loading work.slave_node
+# Loading work.slave_ni
+# ** Warning: (vsim-3008) D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_latency.sv(41): [CNNODP] - Component name (node_00) is not on a downward path.
+# 
+#         Region: /tb_mesh_3x3_latency
+# ** Error: (vsim-3043) D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_latency.sv(41): Unresolved reference to 'node_00' in dut.node_00.
+# 
+#         Region: /tb_mesh_3x3_latency
+# ** Warning: (vsim-3008) D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_latency.sv(48): [CNNODP] - Component name (node_11) is not on a downward path.
+# 
+#         Region: /tb_mesh_3x3_latency
+# ** Error: (vsim-3043) D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_latency.sv(48): Unresolved reference to 'node_11' in dut.node_11.
+# 
+#         Region: /tb_mesh_3x3_latency
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[0]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[1]/MESH_Y[2]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[0]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_L/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_N/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_S/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_E/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_x'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(6).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# ** Warning: (vsim-3015) D:/project_verilog/noc_riscV/rtl/router/input_port.sv(53): [PCDPC] - Port size (2 or 2) does not match connection size (32) for port 'cur_y'. The port definition is at: D:/project_verilog/noc_riscV/rtl/router/xy_routing.sv(7).
+# 
+#         Region: /tb_mesh_3x3_latency/dut/MESH_X[2]/MESH_Y[1]/NODE_TG/u_tg/u_router/in_port_W/m_xy_routing
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./riscV_noc_run_msim_rtl_verilog.do PAUSED at line 39

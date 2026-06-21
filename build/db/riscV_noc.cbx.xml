@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="riscV_noc">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mesh_3x3|slave_node:MESH_X[1].MESH_Y[1].NODE_RAM_11.u_slave|slave_ni:u_slave_ni|altsyncram:memory_rtl_0" CBX_FILE_NAME="altsyncram_noo1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
