@@ -370,23 +370,23 @@ Z133 !s105 master_ni_sv_unit
 !s101 -O0
 vmaster_node
 R13
-Z134 I3O5<[WL_O2a[84blJj^U:2
-Z135 VLhS`cXSjD=b9J3E;8nEdX2
+Z134 !s100 Y;_V`UkafkfBfFWfZeMgB0
+Z135 I3O5<[WL_O2a[84blJj^U:2
+Z136 VLhS`cXSjD=b9J3E;8nEdX2
+Z137 !s105 master_node_sv_unit
 S1
 R3
-Z136 w1782026904
-Z137 8rtl/node/master_node.sv
-Z138 Frtl/node/master_node.sv
+Z138 w1782132111
+Z139 8rtl/node/master_node.sv
+Z140 Frtl/node/master_node.sv
 L0 3
 R7
 r1
 31
-Z139 !s108 1782056327.763000
-Z140 !s107 rtl/node/traffic_gen.sv|rtl/node/tg_node.sv|rtl/node/slave_node.sv|rtl/node/master_node.sv|
-Z141 !s90 rtl/node/master_node.sv|rtl/node/slave_node.sv|rtl/node/tg_node.sv|rtl/node/traffic_gen.sv|
+Z141 !s108 1782188583.640000
+Z142 !s107 rtl/node/traffic_gen.sv|rtl/node/tg_node.sv|rtl/node/slave_node.sv|rtl/node/master_node.sv|
+Z143 !s90 rtl/node/master_node.sv|rtl/node/slave_node.sv|rtl/node/tg_node.sv|rtl/node/traffic_gen.sv|
 o-O0
-Z142 !s100 Y;_V`UkafkfBfFWfZeMgB0
-Z143 !s105 master_node_sv_unit
 !i10b 1
 !s85 0
 !s101 -O0
@@ -412,13 +412,13 @@ Z150 !s100 4CfZnNF678b_K_];l0oNz3
 !s101 -O0
 vmesh_3x3
 R13
-Z151 !s100 6WD?;SBo7[S5<Fcg8L3m:0
-Z152 I@PZbKHEz22?ZW5T@d^LhG0
+Z151 !s100 BHD3Oni4aZCmAeha1?lPO0
+Z152 IESbB[bn33:Zla=31_3bMG3
 Z153 VMl@?l0=@;hADYkW0K86eV2
 Z154 !s105 mesh_3x3_sv_unit
 S1
 R3
-Z155 w1782058857
+Z155 w1782185035
 Z156 8rtl/mesh_3x3/mesh_3x3.sv
 Z157 Frtl/mesh_3x3/mesh_3x3.sv
 L0 3
@@ -427,7 +427,7 @@ r1
 31
 Z158 !s90 rtl/mesh_3x3/mesh_3x3.sv|
 o-O0
-Z159 !s108 1782059207.953000
+Z159 !s108 1782188537.785000
 Z160 !s107 rtl/mesh_3x3/mesh_3x3.sv|
 !i10b 1
 !s85 0
@@ -579,132 +579,198 @@ Z211 !s105 slave_ni_sv_unit
 !s101 -O0
 vslave_node
 R13
-Z212 IaFYbXlLN@Mh?]Z5:1_2CP1
-Z213 Vii1EhR0[e[YJE3OP:l@^U3
+Z212 !s100 KG^:zeSY>MzhF]MD:57YP0
+Z213 IaFYbXlLN@Mh?]Z5:1_2CP1
+Z214 Vii1EhR0[e[YJE3OP:l@^U3
+Z215 !s105 slave_node_sv_unit
 S1
 R3
-Z214 w1782019273
-Z215 8rtl/node/slave_node.sv
-Z216 Frtl/node/slave_node.sv
+Z216 w1782019273
+Z217 8rtl/node/slave_node.sv
+Z218 Frtl/node/slave_node.sv
 L0 3
 R7
 r1
 31
-R139
-R140
 R141
+R142
+R143
 o-O0
-Z217 !s100 KG^:zeSY>MzhF]MD:57YP0
-Z218 !s105 slave_node_sv_unit
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_master_node
 R13
-Z219 !s100 zQ?4BgU6GVUz94hV9:Na=3
-Z220 IJ9;4VO[8?CzhKSjHXGMX>3
-Z221 V>g7^YZhOg5_cSm?Rn`i_Y3
+!i10b 1
+Z219 !s100 eZgci[R[_46i@`=IA_^MS2
+Z220 IXI]a1A5JCbB4M>3Db`ChU0
+Z221 VV4V`_7E7EOAof?mEo:n`b1
 Z222 !s105 tb_master_node_sv_unit
 S1
 R3
-Z223 w1782027872
+Z223 w1782151134
 Z224 8tb/tb_master_node.sv
 Z225 Ftb/tb_master_node.sv
 L0 3
 R7
 r1
-31
-Z226 !s108 1782058885.484000
-Z227 !s107 tb/tb_tg_slave.sv|tb/tb_slave_node.sv|tb/tb_priority.sv|tb/tb_performance_mesh.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_master_node.sv|
-Z228 !s90 tb/tb_master_node.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_performance_mesh.sv|tb/tb_priority.sv|tb/tb_slave_node.sv|tb/tb_tg_slave.sv|
-o-O0
-!i10b 1
 !s85 0
+31
+Z226 !s108 1782188590.571000
+Z227 !s107 tb/tb_tg_slave.sv|tb/tb_slave_node.sv|tb/tb_mesh_3x3_congest.sv|tb/tb_mesh_3x3.sv|tb/tb_master_slave_direct.sv|tb/tb_master_node.sv|
+Z228 !s90 tb/tb_master_node.sv|tb/tb_master_slave_direct.sv|tb/tb_mesh_3x3.sv|tb/tb_mesh_3x3_congest.sv|tb/tb_slave_node.sv|tb/tb_tg_slave.sv|
 !s101 -O0
-vtb_mesh_3x3_congestion
+o-O0
+vtb_master_slave_direct
 R13
-Z229 ISFzfcjg9J@gahoGF6iS<W1
-Z230 VLE:?;3G8<4QJb`kDZ1VLL2
-Z231 !s105 tb_mesh_3x3_congestion_sv_unit
+!i10b 1
+Z229 !s100 ]=aSGWCbXMTdIC[46gOmk1
+Z230 ILNSbb1@zRDzeXdXKNbZZF2
+Z231 VTeF:bER^<:jliGHW[QW3A2
+Z232 !s105 tb_master_slave_direct_sv_unit
 S1
 R3
-Z232 w1782058302
-Z233 8tb/tb_mesh_3x3_congestion.sv
-Z234 Ftb/tb_mesh_3x3_congestion.sv
+Z233 w1782152943
+Z234 8tb/tb_master_slave_direct.sv
+Z235 Ftb/tb_master_slave_direct.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R226
+R227
+R228
+!s101 -O0
+o-O0
+vtb_mesh_3x3
+R13
+!i10b 1
+Z236 !s100 5]TKHKUdWNOn5g3c>HcL:3
+Z237 I6MOaHOW_[f643YN45k=nO2
+Z238 Vh382cb::bfR0I;e@@BVOJ1
+Z239 !s105 tb_mesh_3x3_sv_unit
+S1
+R3
+Z240 w1782177924
+Z241 8tb/tb_mesh_3x3.sv
+Z242 Ftb/tb_mesh_3x3.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R226
+R227
+R228
+!s101 -O0
+o-O0
+vtb_mesh_3x3_congest
+R13
+!i10b 1
+Z243 !s100 ;EF]UIG5d<zLzJ4PBS2UW1
+Z244 I?`07kROR6SkjI;F@kbg[Y2
+Z245 VM>@ZZ2Qf>5]DNZPLY2d7J2
+Z246 !s105 tb_mesh_3x3_congest_sv_unit
+S1
+R3
+Z247 w1782183105
+Z248 8tb/tb_mesh_3x3_congest.sv
+Z249 Ftb/tb_mesh_3x3_congest.sv
+L0 3
+R7
+r1
+!s85 0
+31
+R226
+R227
+R228
+!s101 -O0
+o-O0
+vtb_mesh_3x3_congestion
+R13
+Z250 ISFzfcjg9J@gahoGF6iS<W1
+Z251 VLE:?;3G8<4QJb`kDZ1VLL2
+Z252 !s105 tb_mesh_3x3_congestion_sv_unit
+S1
+R3
+Z253 w1782058302
+Z254 8tb/tb_mesh_3x3_congestion.sv
+Z255 Ftb/tb_mesh_3x3_congestion.sv
 L0 3
 R7
 r1
 31
-Z235 !s108 1782058311.592000
-Z236 !s107 tb/tb_tg_slave.sv|tb/tb_slave_node.sv|tb/tb_performance_mesh.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_master_node.sv|
-Z237 !s90 tb/tb_master_node.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_performance_mesh.sv|tb/tb_slave_node.sv|tb/tb_tg_slave.sv|
+Z256 !s108 1782058311.592000
+Z257 !s107 tb/tb_tg_slave.sv|tb/tb_slave_node.sv|tb/tb_performance_mesh.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_master_node.sv|
+Z258 !s90 tb/tb_master_node.sv|tb/tb_mesh_3x3_congestion.sv|tb/tb_mesh_3x3_latency.sv|tb/tb_performance_mesh.sv|tb/tb_slave_node.sv|tb/tb_tg_slave.sv|
 o-O0
-Z238 !s100 PiSC;SO_9C6jdkkSSSg9[2
+Z259 !s100 PiSC;SO_9C6jdkkSSSg9[2
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_mesh_3x3_latency
 R13
-Z239 !s100 R=WM;=2QdCFDkn2F^JJfU0
-Z240 I6ZhV9b@L5a<k`[d@ILiK?3
-Z241 VdMCB`dkY>>8A;<lgk8_??2
-Z242 !s105 tb_mesh_3x3_latency_sv_unit
+Z260 !s100 R=WM;=2QdCFDkn2F^JJfU0
+Z261 I6ZhV9b@L5a<k`[d@ILiK?3
+Z262 VdMCB`dkY>>8A;<lgk8_??2
+Z263 !s105 tb_mesh_3x3_latency_sv_unit
 S1
 R3
-Z243 w1782056964
-Z244 8tb/tb_mesh_3x3_latency.sv
-Z245 Ftb/tb_mesh_3x3_latency.sv
+Z264 w1782056964
+Z265 8tb/tb_mesh_3x3_latency.sv
+Z266 Ftb/tb_mesh_3x3_latency.sv
 L0 3
 R7
 r1
 31
-R235
-R236
-R237
+R256
+R257
+R258
 o-O0
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_performance_mesh
 R13
-Z246 DXx4 work 27 tb_performance_mesh_sv_unit 0 22 _PbPZ9TLV35ZbdHVHUS833
-Z247 VVePg3]CLO2zMC?bFhNBNb2
+Z267 DXx4 work 27 tb_performance_mesh_sv_unit 0 22 _PbPZ9TLV35ZbdHVHUS833
+Z268 VVePg3]CLO2zMC?bFhNBNb2
 r1
 31
-Z248 !s100 9=_LEUhI[W<I0<Y1?1m>S3
-Z249 Ik3cQXP1aaaA9CKoNh=bVd0
-Z250 !s105 tb_performance_mesh_sv_unit
+Z269 !s100 9=_LEUhI[W<I0<Y1?1m>S3
+Z270 Ik3cQXP1aaaA9CKoNh=bVd0
+Z271 !s105 tb_performance_mesh_sv_unit
 S1
 R3
-Z251 w1782053523
-Z252 8tb/tb_performance_mesh.sv
-Z253 Ftb/tb_performance_mesh.sv
+Z272 w1782053523
+Z273 8tb/tb_performance_mesh.sv
+Z274 Ftb/tb_performance_mesh.sv
 L0 22
 R7
-R235
-R236
-R237
+R256
+R257
+R258
 o-O0
 !s85 0
 !i10b 1
 !s101 -O0
 Xtb_performance_mesh_sv_unit
 R13
-Z254 V_PbPZ9TLV35ZbdHVHUS833
+Z275 V_PbPZ9TLV35ZbdHVHUS833
 r1
 31
-Z255 !s100 MOFC3M^Z:1F4AjD^=A0IZ1
-Z256 I_PbPZ9TLV35ZbdHVHUS833
+Z276 !s100 MOFC3M^Z:1F4AjD^=A0IZ1
+Z277 I_PbPZ9TLV35ZbdHVHUS833
 S1
 R3
-R251
-R252
-R253
+R272
+R273
+R274
 L0 4
 R7
-R235
-R236
-R237
+R256
+R257
+R258
 o-O0
 !s85 0
 !i10b 1
@@ -712,119 +778,121 @@ o-O0
 !s101 -O0
 vtb_priority
 R13
-Z257 !s100 IJ]mbd>mjBZDJ2^e?b@:c0
-Z258 IdKjKbfEHDEY8olNCHVB:G0
-Z259 VWbzU]<o3E2XHm9aZQO`di2
-Z260 !s105 tb_priority_sv_unit
+Z278 !s100 IJ]mbd>mjBZDJ2^e?b@:c0
+Z279 IdKjKbfEHDEY8olNCHVB:G0
+Z280 VWbzU]<o3E2XHm9aZQO`di2
+Z281 !s105 tb_priority_sv_unit
 S1
 R3
-Z261 w1782059634
-Z262 8tb/tb_priority.sv
-Z263 Ftb/tb_priority.sv
+Z282 w1782059634
+Z283 8tb/tb_priority.sv
+Z284 Ftb/tb_priority.sv
 L0 3
 R7
 r1
 31
-Z264 !s90 tb/tb_priority.sv|
+Z285 !s90 tb/tb_priority.sv|
 o-O0
-Z265 !s108 1782059671.297000
-Z266 !s107 tb/tb_priority.sv|
+Z286 !s108 1782059671.297000
+Z287 !s107 tb/tb_priority.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_priority_cpu
 R13
-Z267 I^`Z<JG6Pk9CNTIcTbk]UA1
-Z268 Ve;Q=Ck75^VUilJb3WVUX`1
+Z288 I^`Z<JG6Pk9CNTIcTbk]UA1
+Z289 Ve;Q=Ck75^VUilJb3WVUX`1
 S1
 R3
-Z269 w1782059836
-Z270 8tb/tb_priority_cpu.sv
-Z271 Ftb/tb_priority_cpu.sv
+Z290 w1782059836
+Z291 8tb/tb_priority_cpu.sv
+Z292 Ftb/tb_priority_cpu.sv
 L0 3
 R7
 r1
 31
 o-O0
+Z293 !s100 7L::^nDI1QzIENFZPhDn<0
+Z294 !s105 tb_priority_cpu_sv_unit
+Z295 !s108 1782059867.663000
+Z296 !s107 tb/tb_priority_cpu.sv|
+Z297 !s90 tb/tb_priority_cpu.sv|
 !i10b 1
-Z272 !s100 7L::^nDI1QzIENFZPhDn<0
-Z273 !s105 tb_priority_cpu_sv_unit
 !s85 0
-Z274 !s108 1782059867.663000
-Z275 !s107 tb/tb_priority_cpu.sv|
-Z276 !s90 tb/tb_priority_cpu.sv|
 !s101 -O0
 vtb_slave_node
-Z277 I3m5=BZ]h0ozMYQKE7a]HW3
-Z278 V`JN@9S9cnhjKRR_L]QIcM3
-R231
+R13
+!i10b 1
+Z298 !s100 :o;]4=jOGVb9<EEi38e@30
+Z299 InH81AlQ=5R=0^4Hl[cD382
+Z300 VX13c58dPm[6Y[?lg>257E1
+Z301 !s105 tb_slave_node_sv_unit
 S1
 R3
-Z279 w1782019407
-Z280 8tb/tb_slave_node.sv
-Z281 Ftb/tb_slave_node.sv
+Z302 w1782019407
+Z303 8tb/tb_slave_node.sv
+Z304 Ftb/tb_slave_node.sv
 L0 3
 R7
 r1
+!s85 0
 31
 R226
 R227
 R228
-o-O0
-Z282 !s100 TXl9BVdS[QJ6:0nz]_RV_3
-!i10b 1
-!s85 0
 !s101 -O0
+o-O0
 vtb_tg_slave
-Z283 !s100 a>>WLPed>eD2I7:7dnG570
-Z284 IAbE1E=m?DR[?YRlmk6<JT0
-R278
-R231
+R13
+!i10b 1
+Z305 !s100 PYNRPhFPHoZeWg2k_FANa1
+Z306 I9d[okU`J5=>e7SE;J^C?K0
+Z307 V_l6PR8A1bjz5dJ<zY<Le<2
+Z308 !s105 tb_tg_slave_sv_unit
 S1
 R3
-Z285 w1782020780
-Z286 8tb/tb_tg_slave.sv
-Z287 Ftb/tb_tg_slave.sv
+Z309 w1782020780
+Z310 8tb/tb_tg_slave.sv
+Z311 Ftb/tb_tg_slave.sv
 L0 3
 R7
 r1
+!s85 0
 31
 R226
 R227
 R228
-o-O0
-!i10b 1
-!s85 0
 !s101 -O0
+o-O0
 vtg_node
 R13
-Z288 IJNL7dHe@^RAlMM7kUnO8<2
-Z289 VA?Nfl?8?CfObGN`OZ09b43
+Z312 !s100 IHB7FN?gT1N=YG:gm`cPo1
+Z313 IJNL7dHe@^RAlMM7kUnO8<2
+Z314 VA?Nfl?8?CfObGN`OZ09b43
+Z315 !s105 tg_node_sv_unit
 S1
 R3
-Z290 w1782019752
-Z291 8rtl/node/tg_node.sv
-Z292 Frtl/node/tg_node.sv
+Z316 w1782019752
+Z317 8rtl/node/tg_node.sv
+Z318 Frtl/node/tg_node.sv
 L0 2
 R7
 r1
 31
-R139
-R140
 R141
+R142
+R143
 o-O0
-Z293 !s100 IHB7FN?gT1N=YG:gm`cPo1
-Z294 !s105 tg_node_sv_unit
 !i10b 1
 !s85 0
 !s101 -O0
 vTop_module_pipeline_RISC_V_32I
-Z295 IAXWVYQZP[?g2mbPF_m1hm3
-Z296 VngNS3oS7kIJ476>5AgFNM2
+Z319 IAXWVYQZP[?g2mbPF_m1hm3
+Z320 VngNS3oS7kIJ476>5AgFNM2
 R3
-Z297 w1778409455
-Z298 8rtl/riscV/Top_module_pipeline_RISC_V_32I.v
-Z299 Frtl/riscV/Top_module_pipeline_RISC_V_32I.v
+Z321 w1778409455
+Z322 8rtl/riscV/Top_module_pipeline_RISC_V_32I.v
+Z323 Frtl/riscV/Top_module_pipeline_RISC_V_32I.v
 L0 1
 R7
 r1
@@ -833,18 +901,18 @@ R8
 R9
 R10
 o-O0
-Z300 n@top_module_pipeline_@r@i@s@c_@v_32@i
-Z301 !s100 @RHUG?@MCHz]ihT`nbDIC0
+Z324 n@top_module_pipeline_@r@i@s@c_@v_32@i
+Z325 !s100 @RHUG?@MCHz]ihT`nbDIC0
 !i10b 1
 !s85 0
 !s101 -O0
 vTop_module_riscV_noc
-Z302 IWUK>l=QO0FUodl1VN^FNM0
-Z303 V>ShYD4Vk5gkVG2@Y6o68`0
+Z326 IWUK>l=QO0FUodl1VN^FNM0
+Z327 V>ShYD4Vk5gkVG2@Y6o68`0
 R3
-Z304 w1782051410
-Z305 8rtl/riscV/Top_module_riscV_noc.v
-Z306 Frtl/riscV/Top_module_riscV_noc.v
+Z328 w1782051410
+Z329 8rtl/riscV/Top_module_riscV_noc.v
+Z330 Frtl/riscV/Top_module_riscV_noc.v
 L0 3
 R7
 r1
@@ -853,18 +921,18 @@ R8
 R9
 R10
 o-O0
-Z307 n@top_module_risc@v_noc
-Z308 !s100 eK09IT^NWT_O[ARdo96X;0
+Z331 n@top_module_risc@v_noc
+Z332 !s100 eK09IT^NWT_O[ARdo96X;0
 !i10b 1
 !s85 0
 !s101 -O0
 vTop_Single_Cycle
-Z309 IQVbgO?9E<gjBJJdmQ[^]61
-Z310 VFbl<Mgh>361g@PBV_TH?21
+Z333 IQVbgO?9E<gjBJJdmQ[^]61
+Z334 VFbl<Mgh>361g@PBV_TH?21
 R3
-Z311 w1778172324
-Z312 8rtl/riscV/Top_Single_Cycle.v
-Z313 Frtl/riscV/Top_Single_Cycle.v
+Z335 w1778172324
+Z336 8rtl/riscV/Top_Single_Cycle.v
+Z337 Frtl/riscV/Top_Single_Cycle.v
 L0 4
 R7
 r1
@@ -873,42 +941,42 @@ R8
 R9
 R10
 o-O0
-Z314 n@top_@single_@cycle
-Z315 !s100 34dfdSeO_e]JEz;fT70JA3
+Z338 n@top_@single_@cycle
+Z339 !s100 34dfdSeO_e]JEz;fT70JA3
 !i10b 1
 !s85 0
 !s101 -O0
 vtraffic_gen
 R13
-Z316 ImXE@b;U9AEgb`in@Pa0EP2
-Z317 V6f6U_C@9L2z5:oGiU1E@Q0
+Z340 I]NjZcloY=YJWF8ChdG<3^0
+Z341 V6f6U_C@9L2z5:oGiU1E@Q0
+Z342 !s105 traffic_gen_sv_unit
 S1
 R3
-Z318 w1782034665
-Z319 8rtl/node/traffic_gen.sv
-Z320 Frtl/node/traffic_gen.sv
+Z343 w1782187903
+Z344 8rtl/node/traffic_gen.sv
+Z345 Frtl/node/traffic_gen.sv
 L0 3
 R7
 r1
 31
-R139
-R140
 R141
+R142
+R143
 o-O0
-Z321 !s100 CUd?U1?ZVkN0hk8Oke9T63
-Z322 !s105 traffic_gen_sv_unit
 !i10b 1
+Z346 !s100 _@fY7nATc9CkjaooJ:nh31
 !s85 0
 !s101 -O0
 vxy_routing
 R13
-Z323 I9Hj2`>F^WB;J:CYLlBTMB3
-Z324 VhT[6oHcZP[VG5O>iKd`662
+Z347 I9Hj2`>F^WB;J:CYLlBTMB3
+Z348 VhT[6oHcZP[VG5O>iKd`662
 S1
 R3
-Z325 w1777716939
-Z326 8rtl/router/xy_routing.sv
-Z327 Frtl/router/xy_routing.sv
+Z349 w1777716939
+Z350 8rtl/router/xy_routing.sv
+Z351 Frtl/router/xy_routing.sv
 L0 2
 R7
 r1
@@ -917,8 +985,8 @@ R19
 R20
 R21
 o-O0
-Z328 !s100 A:b@E4:C6_AWFSKFnNK>K3
-Z329 !s105 xy_routing_sv_unit
+Z352 !s100 A:b@E4:C6_AWFSKFnNK>K3
+Z353 !s105 xy_routing_sv_unit
 !i10b 1
 !s85 0
 !s101 -O0

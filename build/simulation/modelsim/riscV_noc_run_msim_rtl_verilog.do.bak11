@@ -34,9 +34,9 @@ vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_
 vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/crossbar_switch.sv}
 vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/rtl/router {D:/project_verilog/noc_riscV/rtl/router/arbiter.sv}
 
-vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/build/../tb {D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_latency.sv}
+vlog -sv -work work +incdir+D:/project_verilog/noc_riscV/build/../tb {D:/project_verilog/noc_riscV/build/../tb/tb_mesh_3x3_congest.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb_mesh_3x3_latency
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  tb_mesh_3x3_congest
 
 add wave *
 view structure

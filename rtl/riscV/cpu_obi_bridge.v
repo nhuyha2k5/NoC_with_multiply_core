@@ -79,7 +79,8 @@ module cpu_obi_bridge (
     end
 
     // 3. Tín hiệu cấp quyền và trả lời được chọn dựa trên bit địa chỉ thứ 31
-    wire is_noc = saved_addr[31]; // 1 là NoC, 0 là Local RAM
+   // Địa chỉ >= 0x1000 (vượt quá 4KB Local RAM) sẽ được đẩy ra mạng NoC
+    wire is_noc = (saved_addr >= 32'h00001000); // 1 là NoC, 0 là Local RAM
     wire gnt    = is_noc ? noc_gnt : local_gnt;
     wire rvalid = is_noc ? noc_rvalid : local_rvalid;
     wire [31:0] rdata = is_noc ? noc_rdata : local_rdata;

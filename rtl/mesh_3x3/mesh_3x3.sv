@@ -68,7 +68,7 @@ module mesh_3x3 #(
                 // 1. CPU MASTER TẠI (0,0)
                 if (x == 0 && y == 0) begin : NODE_CPU_00
                     master_node #(
-                        .DATA_WIDTH(DATA_WIDTH), .CURRENT_X(2'd0), .CURRENT_Y(2'd0), .PRIORITY(1'b1vs),
+                        .DATA_WIDTH(DATA_WIDTH), .CURRENT_X(2'd0), .CURRENT_Y(2'd0), .PRIORITY(1'b0),
                         .ROM_FILE("D:/project_verilog/noc_riscV/rtl/mesh_3x3/hex/code_master0.hex")
                     ) u_master0 (
                         .clk(clk), .rst_n(rst_n),
@@ -81,7 +81,7 @@ module mesh_3x3 #(
                         .e_flit_out(e_flit_out[x][y]), .e_valid_out(e_valid_out[x][y]), .e_credit_out(e_credit_out[x][y]),
                         .w_flit_in(in_w_f), .w_valid_in(in_w_v), .w_credit_in(in_w_c),
                         .w_flit_out(w_flit_out[x][y]), .w_valid_out(w_valid_out[x][y]), .w_credit_out(w_credit_out[x][y])
-                    );
+                    );      
                 end
                 
                 // 2. CPU MASTER TẠI (2,2)
@@ -118,26 +118,39 @@ module mesh_3x3 #(
                         .w_flit_in(in_w_f), .w_valid_in(in_w_v), .w_credit_in(in_w_c),
                         .w_flit_out(w_flit_out[x][y]), .w_valid_out(w_valid_out[x][y]), .w_credit_out(w_credit_out[x][y])
                     );
-                    assign pc_debug[x][y] = 32'b0;
-                    assign alu_debug[x][y] = 32'b0;
+                    assign pc_debug[x][y] = '0;
+                    assign alu_debug[x][y] = '0;
                 end
                 
-                // 4. 6 NODE TRAFFIC GENERATOR CÒN LẠI
-                else begin : NODE_TG
-                    // Nạp các thông số cũ đúng với vị trí (x,y)
-                    localparam L_FACT = (x==0 && y==1) ? 10 :
-                                        (x==0 && y==2) ? 12 :
-                                        (x==1 && y==0) ? 16 :
-                                        (x==1 && y==2) ? 8  :
-                                        (x==2 && y==0) ? 20 :
-                                        (x==2 && y==1) ? 10 : 10;
+               //  4. 6 NODE TRAFFIC GENERATOR CÒN LẠI
+                 else begin : NODE_TG
+                      //Nạp các thông số cũ đúng với vị trí (x,y)
+                  localparam L_FACT = (x==0 && y==1) ? 10 :
+                                         (x==0 && y==2) ? 12 :
+                                         (x==1 && y==0) ? 16 :
+                                         (x==1 && y==2) ? 8  :
+                                         (x==2 && y==0) ? 20 :
+                                         (x==2 && y==1) ? 10 : 10;
 
-                    localparam W_PROB = (x==0 && y==1) ? 50 :
-                                        (x==0 && y==2) ? 30 :
-                                        (x==1 && y==0) ? 50 :
-                                        (x==1 && y==2) ? 80 :
-                                        (x==2 && y==0) ? 20 :
-                                        (x==2 && y==1) ? 60 : 50;
+                     localparam W_PROB = (x==0 && y==1) ? 50 :
+                                         (x==0 && y==2) ? 30 :
+                                         (x==1 && y==0) ? 50 :
+                                         (x==1 && y==2) ? 80 :
+                                         (x==2 && y==0) ? 20 :
+                                         (x==2 && y==1) ? 60 : 50;
+													 
+                //else begin : NODE_TG
+                    // ----------------------------------------------------
+                    // TEST 1: MẠNG THÔNG THOÁNG (Ít phát rác)
+                    // ----------------------------------------------------
+                   // localparam L_FACT = 2; 
+
+                    //localparam W_PROB = (x==0 && y==1) ? 50 :
+                                        //(x==0 && y==2) ? 30 :
+                                        //(x==1 && y==0) ? 50 :
+                                        //(x==1 && y==2) ? 80 :
+                                        //(x==2 && y==0) ? 20 :
+                                        //(x==2 && y==1) ? 60 : 50;
 
                     tg_node #(
                         .DATA_WIDTH(DATA_WIDTH), .CURRENT_X(x), .CURRENT_Y(y), .PRIORITY(1'b0),
@@ -153,8 +166,8 @@ module mesh_3x3 #(
                         .w_flit_in(in_w_f), .w_valid_in(in_w_v), .w_credit_in(in_w_c),
                         .w_flit_out(w_flit_out[x][y]), .w_valid_out(w_valid_out[x][y]), .w_credit_out(w_credit_out[x][y])
                     );
-                    assign pc_debug[x][y] = 0;
-                    assign alu_debug[x][y] = 32'b0;
+                    assign pc_debug[x][y] = '0;
+                    assign alu_debug[x][y] = '0;
                 end
             end
         end

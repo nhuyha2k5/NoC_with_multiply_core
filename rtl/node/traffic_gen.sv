@@ -46,7 +46,8 @@ module traffic_gen #(
     assign rand_we = (seed[6:0] < THRESHOLD);
 
     logic [31:0] rand_addr;
-    assign rand_addr = 32'h8000_0000 | (DEST_X << 26) | (DEST_Y << 24) | (addr_counter << 2);
+    // Ép tọa độ Đích vào đúng bit [13:12] và [9:8] để Master NI đọc được
+assign rand_addr = (DEST_X << 12) | (DEST_Y << 8) | ((addr_counter & 32'h3F) << 2);
 
 
     // =======================================================

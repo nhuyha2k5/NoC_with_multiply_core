@@ -41,9 +41,8 @@ module master_ni #(
     // Tái sử dụng cách dịch địa chỉ cực hay của bạn: 
     // Lấy trực tiếp các bit [27:26] và [25:24] từ địa chỉ
     logic [1:0] dest_x, dest_y;
-    assign dest_x = obi_addr[27:26];
-    assign dest_y = obi_addr[25:24];
-
+		assign dest_x = obi_addr[13:12]; 
+		assign dest_y = obi_addr[9:8];
 
     // =======================================================
     // KHỐI 2: QUẢN LÝ LUỒNG TX (Credit Manager)
