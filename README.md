@@ -5,7 +5,7 @@ Dự án thiết kế và hiện thực hóa mạng NoC (Network-on-Chip) kiến
 ---
 
 ## 🌟 Tổng Quan Kiến Trúc
-![Sơ đồ tổng quan kiến trúc NoC 2x3 Mesh]
+![Sơ đồ tổng quan kiến trúc NoC 3x3 Mesh]
 
 <img width="824" height="626" alt="image" src="https://github.com/user-attachments/assets/860e6f49-94cd-4e81-ab64-8f365c806efa" />
 
