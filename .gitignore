@@ -1,0 +1,14 @@
+# Generated build and simulator output
+build/
+work/
+.Xil/
+*.jou
+*.log
+*.wlf
+transcript
+
+# FPGA products
+*.bit
+*.dcp
+*.edn
+*.xpr

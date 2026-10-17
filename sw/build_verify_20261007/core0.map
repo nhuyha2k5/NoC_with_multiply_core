@@ -1,0 +1,78 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x00000000         0x00004000         xr
+RAM              0x2000e000         0x00002000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0x2000e000                        RAM_ORIGIN = 0x2000e000
+
+.text           0x00000000      0x5f2
+ *(.vectors)
+ .vectors       0x00000000      0x170 C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+                0x00000080                _start
+ *(.text*)
+ .text          0x00000170        0x0 C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+ .text          0x00000170      0x112 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+                0x00000170                handle_trap
+ .text.startup  0x00000282      0x370 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+                0x00000282                main
+
+.rodata         0x000005f4        0x8
+ *(.rodata*)
+ .rodata        0x000005f4        0x8 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+ *(.srodata*)
+                0x000005fc                        . = ALIGN (0x4)
+
+.rela.dyn       0x000005fc        0x0
+ .rela.vectors  0x000005fc        0x0 C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+
+.data           0x2000e000        0x4 load address 0x000005fc
+                0x2000e000                        . = ALIGN (0x4)
+                0x2000e000                        __data_start = .
+ *(.data*)
+ .data          0x2000e000        0x0 C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+ .data          0x2000e000        0x4 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+ *(.sdata*)
+                0x2000e004                        . = ALIGN (0x4)
+                0x2000e004                        __data_end = .
+                0x000005fc                        __data_load = LOADADDR (.data)
+                0x2000e800                        PROVIDE (__global_pointer$ = (__data_start + 0x800))
+
+.bss            0x2000e004        0x0 load address 0x00000600
+                0x2000e004                        . = ALIGN (0x4)
+                0x2000e004                        __bss_start = .
+ *(.bss*)
+ .bss           0x2000e004        0x0 C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+ .bss           0x2000e004        0x0 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+ *(.sbss*)
+ *(COMMON)
+                0x2000e004                        . = ALIGN (0x4)
+                0x2000e004                        __bss_end = .
+                0x20010000                        __stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000001                        ASSERT (((LOADADDR (.data) + SIZEOF (.data)) <= (ORIGIN (ROM) + LENGTH (ROM))), Boot image exceeds ROM)
+                0x00000001                        ASSERT ((__bss_end < (__stack_top - 0x400)), Insufficient stack)
+LOAD C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+LOAD C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+OUTPUT(D:\project_verilog\NoC_with_multiply_core-main\Noc_new\sw\build_verify_20261007\core0.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x43
+ .riscv.attributes
+                0x00000000       0x41 C:\Users\ADMIN\AppData\Local\Temp\ccc9r2cZ.o
+ .riscv.attributes
+                0x00000041       0x43 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+
+.comment        0x00000000       0x33
+ .comment       0x00000000       0x33 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o
+                                 0x34 (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\ADMIN\AppData\Local\Temp\ccOrDk01.o

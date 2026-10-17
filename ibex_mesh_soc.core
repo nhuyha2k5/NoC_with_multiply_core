@@ -1,0 +1,196 @@
+CAPI=2:
+name: local:ibex:mesh_soc:2.0
+description: Self-contained quad-Ibex MESI coherent SoC on a QoS two-VC 3x3 NoC
+
+filesets:
+  common:
+    files:
+      - rtl/router/router_pkg.sv
+      - rtl/cache/coherence_pkg.sv
+      - rtl/network_interface/axi_lite_if.sv
+      - rtl/network_interface/axi4_if.sv
+      - rtl/network_interface/coherence_if.sv
+      - rtl/router/vc_fifo.sv
+      - rtl/router/input_port_vc.sv
+      - rtl/router/packet_arbiter.sv
+      - rtl/router/router_vc.sv
+      - rtl/mesh_3x3/mesh_3x3_vc.sv
+      - rtl/network_interface/ibex_to_axi_lite.sv
+      - rtl/network_interface/axi_lite_to_mesh.sv
+      - rtl/network_interface/axi4_to_mesh.sv
+      - rtl/network_interface/mesh_to_axi_lite.sv
+      - rtl/network_interface/mesh_to_axi4.sv
+      - rtl/network_interface/axi_lite_word_master.sv
+      - rtl/network_interface/mesh_dual_endpoint.sv
+      - rtl/network_interface/mesh_burst_endpoint.sv
+      - rtl/ip_core/axi_lite_register_port.sv
+      - rtl/ip_core/plic_core.sv
+      - rtl/ip_core/timer_ipi_core.sv
+      - rtl/ip_core/clint_core.sv
+      - rtl/ip_core/axi_lite_interrupts.sv
+      - rtl/ip_core/noc_control.sv
+      - rtl/ip_core/axi_lite_dma.sv
+      - rtl/ip_core/axi4_dma.sv
+      - rtl/ip_core/axi_lite_matrix_accelerator.sv
+      - rtl/cache/coherence_manager.sv
+      - rtl/cache/coherence_manager_2core.sv
+      - rtl/cache/mesi_dcache.sv
+      - rtl/ip_core/axi_lite_rom.sv
+      - rtl/ip_core/boot_rom_dual.sv
+      - rtl/ip_core/axi_lite_ram.sv
+      - rtl/ip_core/axi4_banked_ram.sv
+      - rtl/ip_core/axi_lite_uart.sv
+      - rtl/ip_core/axi_lite_gpio.sv
+      - rtl/ip_core/axi_lite_timer.sv
+      - rtl/ip_core/axi_lite_mailbox.sv
+      - rtl/ip_core/axi_lite_tas.sv
+      - rtl/node/shared_ram_node.sv
+      - rtl/node/uart_node.sv
+      - rtl/node/gpio_node.sv
+      - rtl/node/timer_node.sv
+      - rtl/node/mailbox_node.sv
+      - rtl/node/interrupt_node.sv
+      - rtl/node/peripheral_node.sv
+      - rtl/node/dma_node.sv
+      - rtl/node/accelerator_node.sv
+    file_type: systemVerilogSource
+
+  soc:
+    depend:
+      - lowrisc:ibex:ibex_top
+    files:
+      - rtl/riscV/ibex_axi_tile.sv
+      - rtl/node/ibex_node.sv
+      - rtl/mesh_3x3/ibex_mesh_soc.sv
+    file_type: systemVerilogSource
+
+  board_vc707:
+    files:
+      - rtl/board/vc707_top.sv
+      - constraints/vc707.xdc: {file_type: xdc}
+    file_type: systemVerilogSource
+
+  prim_generic:
+    depend:
+      - lowrisc:prim_generic:all
+
+  prim_xilinx:
+    depend:
+      - lowrisc:prim_xilinx:all
+
+  tb_axi_mesh:
+    files:
+      - tb/tb_axi_mesh_3x3.sv
+    file_type: systemVerilogSource
+
+  tb_mesi:
+    files:
+      - tb/tb_mesi_coherence.sv
+    file_type: systemVerilogSource
+
+  tb_peripherals:
+    files:
+      - tb/tb_distributed_peripherals.sv
+    file_type: systemVerilogSource
+
+  tb_qos:
+    files:
+      - tb/tb_packet_arbiter_qos.sv
+    file_type: systemVerilogSource
+
+  tb_ibex_soc:
+    files:
+      - tb/tb_ibex_soc_smoke.sv
+    file_type: systemVerilogSource
+
+  tb_firmware:
+    files:
+      - tb/performance/noc_endpoint_stats.sv
+      - tb/tb_firmware.sv
+    file_type: systemVerilogSource
+
+targets:
+  default:
+    filesets:
+      - common
+      - prim_xilinx
+      - soc
+    toplevel: ibex_mesh_soc
+    default_tool: vivado
+    tools:
+      vivado:
+        part: xc7vx485tffg1761-2
+
+  vc707:
+    filesets:
+      - common
+      - prim_xilinx
+      - soc
+      - board_vc707
+    toplevel: vc707_top
+    default_tool: vivado
+    tools:
+      vivado:
+        part: xc7vx485tffg1761-2
+
+  sim_axi_mesh:
+    filesets: [common, tb_axi_mesh]
+    toplevel: tb_axi_mesh_3x3
+    default_tool: modelsim
+    tools:
+      modelsim:
+        vlog_options: [-sv]
+
+  sim_mesi:
+    filesets: [common, tb_mesi]
+    toplevel: tb_mesi_coherence
+    default_tool: modelsim
+    tools:
+      modelsim:
+        vlog_options: [-sv]
+
+  sim_peripherals:
+    filesets: [common, tb_peripherals]
+    toplevel: tb_distributed_peripherals
+    default_tool: modelsim
+    tools:
+      modelsim:
+        vlog_options: [-sv]
+
+  sim_qos:
+    filesets: [common, tb_qos]
+    toplevel: tb_packet_arbiter_qos
+    default_tool: modelsim
+    tools:
+      modelsim:
+        vlog_options: [-sv]
+
+  sim_ibex_soc:
+    filesets:
+      - common
+      - prim_generic
+      - soc
+      - tb_ibex_soc
+    toplevel: tb_ibex_soc_smoke
+    default_tool: modelsim
+    tools:
+      modelsim:
+        vlog_options:
+          - -sv
+          - +define+SYNTHESIS
+
+  lint:
+    filesets:
+      - common
+      - prim_generic
+      - soc
+    toplevel: ibex_mesh_soc
+    default_tool: verilator
+
+  sim_firmware:
+    filesets: [common, prim_generic, soc, tb_firmware]
+    toplevel: tb_firmware
+    default_tool: modelsim
+    tools:
+      modelsim:
+        vlog_options: [-sv, +define+SYNTHESIS]
